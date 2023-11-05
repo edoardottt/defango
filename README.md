@@ -42,8 +42,11 @@ Get Started 🎉
 ----------
 
 ```go
+package main
+
 import (
     "fmt"
+    "log"
     "github.com/edoardottt/defango"
 )
 
