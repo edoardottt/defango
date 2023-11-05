@@ -19,7 +19,7 @@
 
 <br>
   <!--Tweet button-->
-  <a href="https://twitter.com/intent/tweet?text=defango%20-%20Reconnaissance%20tool%20based%20on%20Content%20Security%20Policy%20https%3A%2F%2Fgithub.com%2Fedoardottt%2Fdefango%20%23golang%20%23github%20%23linux%20%23infosec%20%23bugbounty" target="_blank">Share on Twitter!
+  <a href="https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3Ddefango%20-%20URL%20%2F%20IP%20%2F%20Email%20defanging%20with%20Golang.%20Make%20IoC%20harmless.%20https%3A%2F%2Fgithub.com%2Fedoardottt%2Fdefango%20%23golang%20%23github%20%23linux%20%23infosec%20%23malware" target="_blank">Share on Twitter!
   </a>
 </p>
 
@@ -31,10 +31,6 @@
   <a href="#license-">License</a>
 </p>
 
-<p align="center">
-  <img src="https://github.com/edoardottt/images/blob/main/defango/defango.gif">
-</p>
-  
 Install 📡
 ----------
 
