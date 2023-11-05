@@ -74,7 +74,7 @@ Just open an [issue](https://github.com/edoardottt/defango/issues) / [pull reque
 
 Before opening a pull request, download [golangci-lint](https://golangci-lint.run/usage/install/) and run
 
-```bash
+```console
 golangci-lint run
 ```
 
