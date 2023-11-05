@@ -19,7 +19,7 @@
 
 <br>
   <!--Tweet button-->
-  <a href="https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3Ddefango%20-%20URL%20%2F%20IP%20%2F%20Email%20defanging%20with%20Golang.%20Make%20IoC%20harmless.%20https%3A%2F%2Fgithub.com%2Fedoardottt%2Fdefango%20%23golang%20%23github%20%23linux%20%23infosec%20%23malware" target="_blank">Share on Twitter!
+  <a href="https://twitter.com/intent/tweet?text=defango%20-%20URL%20%2F%20IP%20%2F%20Email%20defanging%20with%20Golang.%20Make%20IoC%20harmless.%20https%3A%2F%2Fgithub.com%2Fedoardottt%2Fdefango%20%23golang%20%23github%20%23linux%20%23infosec%20%23malware" target="_blank">Share on Twitter!
   </a>
 </p>
 
@@ -35,15 +35,32 @@ Install 📡
 ----------
 
 ```console
-go install github.com/edoardottt/defango@latest
+go get github.com/edoardottt/defango
 ```
 
 Get Started 🎉
 ----------
 
 ```go
-...
+import (
+    "fmt"
+    "github.com/edoardottt/defango"
+)
+
+func main() {
+    fmt.Println(defango.IP("8.8.8.8:53"))
+
+    u, err := defango.URL("http://malicious.example.link.com:666/m4lw4r3.exe")
+    if err != nil {
+      log.Fatal(err)
+    }
+    fmt.Println(u)
+
+    fmt.Println(defango.Email("mailto:edoardott@gmail.com"))
+}
 ```
+
+Read the full [`package documentation here`](https://pkg.go.dev/github.com/edoardottt/defango).
 
 Changelog 📌
 -------
@@ -57,7 +74,7 @@ Just open an [issue](https://github.com/edoardottt/defango/issues) / [pull reque
 
 Before opening a pull request, download [golangci-lint](https://golangci-lint.run/usage/install/) and run
 
-```bash
+```console
 golangci-lint run
 ```
 
