@@ -35,7 +35,7 @@ Install 📡
 ----------
 
 ```console
-go install github.com/edoardottt/defango@latest
+go get github.com/edoardottt/defango
 ```
 
 Get Started 🎉
