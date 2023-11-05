@@ -42,8 +42,25 @@ Get Started 🎉
 ----------
 
 ```go
-...
+import (
+    "fmt"
+    "github.com/edoardottt/defango"
+)
+
+func main() {
+    fmt.Println(defango.IP("8.8.8.8:53"))
+
+    u, err := defango.URL("http://malicious.example.link.com:666/m4lw4r3.exe")
+    if err != nil {
+      log.Fatal(err)
+    }
+    fmt.Println(u)
+
+    fmt.Println(defango.Email("mailto:edoardott@gmail.com"))
+}
 ```
+
+Read the full [`package documentation here`](https://pkg.go.dev/github.com/edoardottt/defango).
 
 Changelog 📌
 -------
