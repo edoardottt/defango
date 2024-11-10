@@ -89,8 +89,8 @@ func TestURL(t *testing.T) {
 		},
 		{
 			name:  "https URL",
-			input: "https://www.edoardoottavianelli.it",
-			want:  "hxxps://www[.]edoardoottavianelli[.]it",
+			input: "https://edoardottt.com",
+			want:  "hxxps://edoardottt[.]com",
 			err:   nil,
 		},
 		{
@@ -101,8 +101,8 @@ func TestURL(t *testing.T) {
 		},
 		{
 			name:  "http URL",
-			input: "http://www.edoardoottavianelli.it",
-			want:  "hxxp://www[.]edoardoottavianelli[.]it",
+			input: "http://edoardottt.com",
+			want:  "hxxp:/edoardottt[.]com",
 			err:   nil,
 		},
 		{
@@ -113,8 +113,8 @@ func TestURL(t *testing.T) {
 		},
 		{
 			name:  "http URL and port",
-			input: "http://www.edoardoottavianelli.it:8080",
-			want:  "hxxp://www[.]edoardoottavianelli[.]it[:]8080",
+			input: "http://edoardottt.com:8080",
+			want:  "hxxp://edoardottt[.]com[:]8080",
 			err:   nil,
 		},
 		{
@@ -143,26 +143,26 @@ func TestURL(t *testing.T) {
 		},
 		{
 			name:  "URL no protocol",
-			input: "www.edoardoottavianelli.it",
-			want:  "www[.]edoardoottavianelli[.]it",
+			input: "edoardottt.com",
+			want:  "edoardottt[.]com",
 			err:   nil,
 		},
 		{
 			name:  "URL malformed protocol",
-			input: "://www.edoardoottavianelli.it",
-			want:  "://www[.]edoardoottavianelli[.]it",
+			input: "://edoardottt.com",
+			want:  "://edoardottt[.]com",
 			err:   nil,
 		},
 		{
 			name:  "URL no protocol and port",
-			input: "www.edoardoottavianelli.it:8080",
-			want:  "www[.]edoardoottavianelli[.]it[:]8080",
+			input: "edoardottt.com:8080",
+			want:  "edoardottt[.]com[:]8080",
 			err:   nil,
 		},
 		{
 			name:  "https URL (url.URL)",
-			input: *parseURL("https://www.edoardoottavianelli.it"),
-			want:  "hxxps://www[.]edoardoottavianelli[.]it",
+			input: *parseURL("https://edoardottt.com"),
+			want:  "hxxps://edoardottt[.]com",
 			err:   nil,
 		},
 		{
@@ -173,8 +173,8 @@ func TestURL(t *testing.T) {
 		},
 		{
 			name:  "http URL (url.URL)",
-			input: *parseURL("http://www.edoardoottavianelli.it"),
-			want:  "hxxp://www[.]edoardoottavianelli[.]it",
+			input: *parseURL("http://edoardottt.com"),
+			want:  "hxxp://edoardottt[.]com",
 			err:   nil,
 		},
 		{
@@ -185,8 +185,8 @@ func TestURL(t *testing.T) {
 		},
 		{
 			name:  "http URL and port (url.URL)",
-			input: *parseURL("http://www.edoardoottavianelli.it:8080"),
-			want:  "hxxp://www[.]edoardoottavianelli[.]it[:]8080",
+			input: *parseURL("http://edoardottt.com:8080"),
+			want:  "hxxp://edoardottt[.]com[:]8080",
 			err:   nil,
 		},
 		{
@@ -215,14 +215,14 @@ func TestURL(t *testing.T) {
 		},
 		{
 			name:  "URL no protocol (url.URL)",
-			input: *parseURL("www.edoardoottavianelli.it"),
-			want:  "www[.]edoardoottavianelli[.]it",
+			input: *parseURL("edoardottt.com"),
+			want:  "edoardottt[.]com",
 			err:   nil,
 		},
 		{
 			name:  "URL no protocol and port (url.URL)",
-			input: *parseURL("www.edoardoottavianelli.it:8080"),
-			want:  "www[.]edoardoottavianelli[.]it[:]8080",
+			input: *parseURL("edoardottt.com:8080"),
+			want:  "edoardottt[.]com[:]8080",
 			err:   nil,
 		},
 		{
