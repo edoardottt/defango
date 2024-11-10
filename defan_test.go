@@ -102,7 +102,7 @@ func TestURL(t *testing.T) {
 		{
 			name:  "http URL",
 			input: "http://edoardottt.com",
-			want:  "hxxp:/edoardottt[.]com",
+			want:  "hxxp://edoardottt[.]com",
 			err:   nil,
 		},
 		{
