@@ -1,6 +1,6 @@
 module github.com/edoardottt/defango
 
-go 1.21.2
+go 1.25.0
 
 require github.com/stretchr/testify v1.12.1
 
