@@ -16,7 +16,6 @@ linters:
     - godot
     - godox
     - goheader
-    - gomodguard
     - goprintffuncname
     - govet
     - ineffassign
@@ -34,10 +33,6 @@ linters:
     - unparam
     - unused
     - whitespace
-    - wsl
-  settings:
-    wsl:
-      strict-append: false
   exclusions:
     generated: lax
     presets:
@@ -46,8 +41,6 @@ linters:
       - legacy
       - std-error-handling
     rules:
-      - path: defan.go
-        text: maybe you wanted to do Index
       - path: _test\.go
         linters:
           - goconst
